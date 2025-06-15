@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominator Ishan | My Coding & YouTube Journey 🚀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="fade-in">👑 Dominator Ishan</h1>
+
+    <dl class="fade-in">
+        <dt>🧑‍💻 Who Am I?</dt>
+        <dd>I am a 15-year-old boy trying to improve in life. My focus is on academics 📚, sports 🏋️, financial skills 💰, and coding 💻.</dd>
+    </dl>
+
+    <h2 class="fade-in ">📺 My YouTube Channel</h2>
+    <a class="center-link" target="_blank" href="https://www.youtube.com/@DominatorIshan" class="fade-in">🔥 Dominator Ishan on YouTube 🔥</a>
+
+    <h2 class="fade-in">🎥 Watch My Videos</h2>
+    <a class="center-link" href="videos.html" class="fade-in">👉 Click Here to Watch My YouTube Videos</a>
+
+    <h2 class="fade-in">📊 My Current Situation in Every Aspect</h2>
+    <dl class="fade-in">
+        <dt>🎓 Academics</dt>
+        <dd>Right now, because of my coding focus, I have 25+ backlogs 📚💀</dd>
+
+        <dt>💪 Physical</dt>
+        <dd>I am currently overweight 😅. I’ll cut 100-200 calories daily 🍽️ and aim for 1-2g protein/kg 🥩</dd>
+
+        <dt>💰 Financial</dt>
+        <dd>I am currently ₹50,000+ in debt 😔, but I’ll fight out of it 💪🔥</dd>
+
+        <dt>😵 Emotional</dt>
+        <dd>Going through puberty + emotional instability. Cutting fun time for coding hurts 😔, but I’ll win 💥</dd>
+
+        <dt>🕉️ Spirituality</dt>
+        <dd>I don’t visit holy places anymore 🙏. I know I need to reconnect. Will work on it 🛐</dd>
+
+        <dt>🎥 YouTube</dt>
+        <dd>Learning editing ✂️, thumbnails 🎨, speaking 🎙️ → Skills that will benefit me forever 🧠🔥</dd>
+    </dl>
+
+    <h2 class="fade-in">🚀 My Future Plans</h2>
+    <dl class="fade-in">
+        <dt>📺 YouTube</dt>
+        <dd>Upload Ratio → Shorts 60% 🎞️ / Videos 40% 🎥 until 1k subs 🔔</dd>
+
+        <dt>💪 Physical</dt>
+        <dd>Lower body fat percentage 🔥 + Strength 🏋️‍♂️ + Stamina 🏃‍♂️</dd>
+
+        <dt>💰 Financial</dt>
+        <dd>I want to fix my financial mistakes 🛑 and break out of the debt trap 🚀</dd>
+
+        <dt>🧠 Emotional</dt>
+        <dd>Meditation 🧘‍♂️ + Prayer 🙏 will help stabilize my emotions ❤️</dd>
+    </dl>
+
+    <h2 class="fade-in">🗂️ Habits I Want to Build ✅</h2>
+    <ul class="fade-in">
+        <li>📚 3-4 Hours Daily Studying</li>
+        <li>💻 30 Minutes Daily on Coding</li>
+        <li>🍽️ Diet Management → Tracking calories & protein</li>
+    </ul>
+
+    <h2 class="fade-in">❌ Habits I Want to Quit 🚫</h2>
+    <ul class="fade-in">
+        <li>📱 Excessive Phone Usage</li>
+        <li>⏳ Procrastination → "I’ll do it later..." NO MORE! ⚡</li>
+        <li>💭 Thinking of Quitting → NEVER AGAIN 🔥</li>
+    </ul>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+</html>
