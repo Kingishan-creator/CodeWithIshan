@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominator Ishan | Projects 🗂️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">🏠 Home</a> | 
+        <a href="videos.html">🎥 Videos</a> | 
+        <a href="projects.html">🗂️ Projects</a>
+    </nav>
+
+    <h1 class="fade-in">🗂️ My Projects</h1>
+
+    <dl class="fade-in">
+        <dt>🌐 Personal Website (Live)</dt>
+        <dd>This is the website you are seeing → I am improving it step-by-step 🚀</dd>
+
+        <dt>📇 Card Website Project</dt>
+        <dd>
+            I made a Lamborghini Urus Card website 🏎️ → 
+            <a href="https://kingishan-creator.github.io/Card-Website1/" target="_blank">View Project 🔗</a>
+        </dd>
+
+        <dt>🎮 JavaScript Game</dt>
+        <dd>Working on a small fun game → Will upload soon 🕹️</dd>
+
+        <dt>📊 Portfolio Progress Tracker</dt>
+        <dd>Planning to build a site to track studies 📚, fitness 🏋️‍♂️, coding 💻 → Everything in one place ⚡</dd>
+    </dl>
+
+    <h2 class="fade-in">⚙️ Tech Stack I'm Learning</h2>
+    <ul class="fade-in">
+        <li>💻 HTML, CSS, JavaScript → Foundation</li>
+        <li>⚛️ React.js → For bigger projects</li>
+        <li>🛠️ Backend → Node.js + MongoDB → Coming Soon!</li>
+    </ul>
+
+    <a class="center-link fade-in" href="index.html">⬅️ Back to Home</a>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+</html>

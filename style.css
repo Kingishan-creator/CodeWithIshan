@@ -91,3 +91,17 @@ li {
 
 
 /* Optional: Light/Dark toggle in future */
+
+
+
+/* Project Page Specific Styles */
+dt::before {
+    content: "📌 ";
+    color: #1e90ff;
+}
+ul li::before {
+    content: "✅ ";
+    color: #27ae60;
+    margin-right: 6px;
+}
+
