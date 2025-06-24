@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominator Ishan | Mistakes ❌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">🏠 Home</a> | 
+        <a href="videos.html">🎥 Videos</a> | 
+        <a href="projects.html">🗂️ Projects</a> | 
+        <a href="mistakes.html">❌ Mistakes</a>
+    </nav>
+
+    <h1 class="fade-in">❌ My Big Mistakes</h1>
+
+    <dl class="fade-in">
+        <dt>📉 Trading Mistakes</dt>
+        <dd>⚠️ <strong>Total Loss:</strong> ₹5,00,000 (Mother’s Money)</dd>
+        <dd>🚫 No learning, just greed for quick money.</dd>
+        <dd>🌀 Tried multiple types of trading without understanding them properly.</dd>
+        <dd>💰 Never withdrew profits, always trying to "compound" by 10-20% each day.</dd>
+        <dd>🔎 No proper setup or strategy. ❌ No back-testing before real trades.</dd>
+        <dd>🎥 Influenced by random YouTubers showing profits without showing losses.</dd>
+        <dd>🔥 No risk management. Blew up entire capital.</dd>
+
+        <dt>🎰 Gambling Mistakes</dt>
+        <dd>⚠️ No proper money management in gambling or trading.</dd>
+        <dd>🪙 Depositing random amounts → No fixed daily or weekly limit.</dd>
+        <dd>💳 Eventually started using <strong>Credit Cards</strong> for deposits → 🕳️ Debt spiral.</dd>
+        <dd>🧠 Watched fake YouTubers thinking gambling will solve financial problems.</dd>
+        <dd>⏰ Spent time gambling instead of learning proper skills → Result = Loss + Waste of time.</dd>
+    </dl>
+
+    <h2 class="fade-in">💡 Lessons Learned</h2>
+    <ul class="fade-in">
+        <li>📚 Learn first → Earn later. No shortcuts.</li>
+        <li>💵 Always withdraw profits. Never chase unrealistic growth.</li>
+        <li>📊 Follow a proper trading setup with back-tested strategies only.</li>
+        <li>🛑 Gambling = 100% LOSS. Stop completely.</li>
+        <li>📝 Focus on skills → Coding 💻 | Business 📈 | Fitness 🏋️‍♂️</li>
+    </ul>
+
+    <a class="center-link fade-in" href="index.html">⬅️ Back to Home</a>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+</html>
